@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+  android:orientation = "horizontal"
+  android:layout_width = "match_parent"
+  android:layout_height = "wrap_content"
+              android:background = "@android:color/white">
+
+  <RelativeLayout
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:layout_marginLeft = "18dp"
+    android:layout_marginRight = "18dp"
+    android:layout_marginTop = "18dp"
+    android:layout_marginBottom = "18dp">
+
+  <TextView
+    android:id = "@+id/tvBody"
+    android:layout_width = "wrap_content"
+    android:layout_height = "wrap_content"
+    android:layout_alignParentLeft = "false"
+    android:layout_alignParentStart = "false"
+    android:layout_alignParentTop = "false"
+    android:text = "@string/s_dialog_contacts_saved"
+    android:textColor = "@color/text_dialog_secondary"
+    android:textSize = "@dimen/text_dialog_secondary"
+    android:layout_alignParentRight = "false"
+    android:layout_alignParentEnd = "false"
+    />
+
+  <TextView
+    android:id = "@+id/tvClose"
+    android:layout_width = "wrap_content"
+    android:layout_height = "wrap_content"
+    android:text = "@string/s_ok"
+    android:textSize = "@dimen/text_dialog_buttons"
+    android:layout_alignParentBottom = "false"
+    android:layout_alignParentRight = "false"
+    android:textColor = "@color/text_dialog_button_neutral"
+    android:layout_alignRight = "@+id/tvBody"
+    android:layout_below = "@+id/tvBody"
+    android:layout_marginTop = "12dp"
+    android:padding = "12dp" />
+
+  </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+  <style name = "app.Base"
+         parent = "Theme.AppCompat.NoActionBar"> <!-- Inherit from the AppCompat theme -->
+
+    <item name = "@android:colorPrimary">@color/primary</item> <!-- Main theme colors -->
+    <item name = "@android:colorPrimaryDark">@color/primary_dark</item> <!-- The app's branding color for the app bar -->
+    <item name = "@android:colorAccent">@color/accent</item> <!-- A darker variant for the status bar and contextual app bars -->
+
+    <!-- Color for theme UI controls like checkboxes and text fields -->
+
+    <!-- Window characteristics -->
+    <item name = "@android:windowNoTitle">true</item>
+    <item name = "@android:windowActionBar">false</item>
+  </style>
+
+  <style name = "app"
+         parent = "app.Base">
+  </style>
+
+  <style name = "app.Toolbar.DarkOverflow"
+         parent = "Theme.AppCompat.NoActionBar">
+
+    <!-- android:textColorPrimary is the  color of the title text in the Toolbar, in the Theme.AppCompat theme:  -->
+    <item name = "android:textColorPrimary">@color/text_toolbar_primary</item>
+
+    <!-- android:textColorPrimaryInverse is the  color of the title
+         text in the Toolbar, in the Theme.AppCompat.Light theme:  -->
+    <!-- <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item> -->
+
+    <!-- android:actionMenuTextColor is the color of the text of
+          action (menu) items in the Toolbar, at least in the
+          Theme.AppCompat theme.
+          For some reason, they already get the textColorPrimary
+          when running on API 21, but not on older versions of
+          Android, so this is only necessary to support older
+          Android versions.-->
+    <item name = "actionMenuTextColor">@color/text_toolbar_primary</item>
+    <!-- android:textColorSecondary is the color of the menu
+         overflow icon (three vertical dots) -->
+    <item name = "android:textColorSecondary">@color/text_toolbar_secondary</item>
+
+    <!-- This would set the toolbar's background color,
+          but setting this also changes the popup menu's background,
+          even if we define popupTheme for our <Toolbar> -->
+    <!-- <item name="android:background">@color/color_primary</item> -->
+  </style>
+
+  <style name = "app.Dialog"
+         parent = "Theme.AppCompat.Dialog">
+  </style>
+
+  <style name = "ActivityLocation"
+         parent = "app">
+  </style>
+
+  <style name = "Modal"
+         parent = "app.Dialog">
+  </style>
+
+  <style name = "ActivityMain"
+         parent = "app">
+  </style>
+
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+  <LinearLayout
+    android:id="@+id/llItemDrawer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+
+    android:orientation="vertical"
+    android:background="#66d0d0d0">
+
+    <LinearLayout
+
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="55dp"
+      android:layout_marginRight="12dp" android:layout_marginLeft="18dp" android:layout_marginBottom="6dp" android:layout_marginTop="3dp" android:gravity="center_vertical">
+
+      <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom" />
+
+      <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_vertical|bottom" android:layout_marginLeft="9dp" android:layout_marginBottom="3dp" android:textSize="@dimen/text_secondary" />
+    </LinearLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginBottom="1dp"
+      android:layout_marginLeft="6dp"
+      android:layout_marginRight="6dp"
+      android:layout_marginTop="1dp"
+      android:background="#DADADA"
+      />
+
+  </LinearLayout>
+
+</RelativeLayout>

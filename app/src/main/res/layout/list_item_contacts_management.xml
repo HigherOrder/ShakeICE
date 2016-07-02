@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  xmlns:android = "http://schemas.android.com/apk/res/android"
+  android:layout_width = "match_parent"
+  android:layout_height = "match_parent">
+  <RelativeLayout
+    android:id = "@+id/relativeLayout"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:padding = "6dp">
+    <LinearLayout
+      android:id = "@+id/llText"
+      android:layout_width = "match_parent"
+      android:layout_height = "wrap_content"
+      android:layout_centerVertical = "true"
+      android:orientation = "vertical">
+      <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:orientation = "horizontal">
+        <TextView
+          android:id = "@+id/tvName"
+          android:layout_width = "wrap_content"
+          android:layout_height = "wrap_content"
+          android:text = "@string/s_name_contact"
+          android:textAppearance = "?android:attr/textAppearanceMedium"
+          android:textColor = "@color/text_primary"
+          android:textSize = "@dimen/text_secondary"
+          />
+        <TextView
+          android:id = "@+id/tvPrimary"
+          android:layout_width = "wrap_content"
+          android:layout_height = "wrap_content"
+          android:layout_gravity = "bottom"
+          android:layout_marginLeft = "9dp"
+          android:text = "@string/s_primary"
+          android:textAppearance = "?android:attr/textAppearanceMedium"
+          android:textColor = "@color/text_tertiary"
+          android:textSize = "@dimen/text_tertiary"
+          />
+      </LinearLayout>
+      <TextView
+        android:id = "@+id/tvNumber"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_gravity = "top"
+        android:text = "@string/s_number_contact"
+        android:textColor = "@color/text_tertiary"
+        android:textSize = "@dimen/text_tertiary" />
+    </LinearLayout>
+    <ImageView
+      android:id = "@+id/ivRemove"
+      android:layout_width = "30dp"
+      android:layout_height = "30dp"
+      android:layout_alignParentEnd = "false"
+      android:layout_centerVertical = "true"
+      android:layout_gravity = "center_vertical|right"
+      android:layout_toLeftOf = "@+id/ivPrimary"
+      android:background = "@drawable/ic_remove_circle_outline_black_24dp"
+      android:contentDescription = "@string/s_content_description"
+      android:layout_marginRight = "12dp" />
+    <ImageView
+      android:id = "@+id/ivPrimary"
+      android:layout_width = "30dp"
+      android:layout_height = "30dp"
+      android:layout_alignParentEnd = "true"
+      android:layout_centerVertical = "true"
+      android:layout_gravity = "center_vertical|right"
+      android:background = "@drawable/primary"
+      android:contentDescription = "@string/s_content_description"
+      />
+    <ImageView
+      android:id = "@+id/ivPrimarySelected"
+      android:layout_width = "30dp"
+      android:layout_height = "30dp"
+      android:layout_alignParentEnd = "true"
+      android:layout_centerVertical = "true"
+      android:layout_gravity = "center_vertical|right"
+      android:background = "@drawable/primary_selected"
+      android:contentDescription = "@string/s_content_description"
+      android:visibility = "invisible" />
+  </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 23 // Android version 5.1.1 (Lollipop)
+  buildToolsVersion "22.0.1"
+
+  defaultConfig {
+    minSdkVersion 16 // Android version 4.1.2 (Jelly Bean), since July 9, 2012
+//    minSdkVersion 10 // Android version 2.3.3 (Gingerbread), since February 9, 2011
+    applicationId "com.progfun.app.shakeice"
+    versionCode 4
+    versionName "1.4"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+  compile 'com.android.support:support-v4:23.4.0'
+  compile 'com.android.support:appcompat-v7:23.4.0'
+  compile 'com.android.support:design:23.4.0'
+  compile 'com.google.android.gms:play-services-location:7.5.0'
+}

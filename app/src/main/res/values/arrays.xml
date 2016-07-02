@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+  <string-array name="sa_activities">
+    <item> @string/s_activity_riding_bicycle </item>
+    <item> @string/s_activity_riding_two_wheeler </item>
+    <item> @string/s_activity_driving_four_wheeler_city </item>
+    <item> @string/s_activity_driving_four_wheeler_highway </item>
+    <item> @string/s_activity_walking </item>
+    <item> @string/s_activity_running </item>
+    <item> @string/s_activity_swimming </item>
+  </string-array>
+
+  <string-array name="sa_activities_values">
+    <item> @string/s_activity_value_riding_bicycle </item>
+    <item> @string/s_activity_value_riding_two_wheeler </item>
+    <item> @string/s_activity_value_driving_four_wheeler_city </item>
+    <item> @string/s_activity_value_driving_four_wheeler_highway </item>
+    <item> @string/s_activity_value_walking </item>
+    <item> @string/s_activity_value_running </item>
+    <item> @string/s_activity_value_swimming </item>
+  </string-array>
+
+  <string-array name="pref_value_entries_sms_enable">
+    <item>App will send SMS alert when GForce threshold is exceeded.</item>
+    <item>App will NOT send SMS alert when GForce threshold is exceeded.</item>
+  </string-array>
+
+  <string-array name="pref_value_entry_values_sms_enable">
+    <item>true</item>
+    <item>false</item>
+  </string-array>
+
+  <string-array name="pref_value_entries_threshold_gforce">
+    <item>1.44</item>
+    <item>2.16</item>
+    <item>2.88</item>
+    <item>5.00</item>
+    <item>6.00</item>
+    <item>7.00</item>
+    <item>8.00</item>
+    <item>9.00</item>
+    <item>10.00</item>
+    <item>11.00</item>
+    <item>12.00</item>
+    <item>13.00</item>
+    <item>14.00</item>
+    <item>15.00</item>
+    <item>16.00</item>
+    <item>17.00</item>
+    <item>18.00</item>
+    <item>19.00</item>
+    <item>20.00</item>
+    <item>21.00</item>
+    <item>22.00</item>
+    <item>23.00</item>
+    <item>24.00</item>
+    <item>25.00</item>
+    <item>26.00</item>
+    <item>27.00</item>
+    <item>28.00</item>
+    <item>29.00</item>
+    <item>30.00</item>
+  </string-array>
+
+  <string-array name="pref_value_entry_values_threshold_gforce">
+    <item>1.44</item>
+    <item>2.16</item>
+    <item>2.88</item>
+    <item>5.00</item>
+    <item>6.00</item>
+    <item>7.00</item>
+    <item>8.00</item>
+    <item>9.00</item>
+    <item>10.00</item>
+    <item>11.00</item>
+    <item>12.00</item>
+    <item>13.00</item>
+    <item>14.00</item>
+    <item>15.00</item>
+    <item>16.00</item>
+    <item>17.00</item>
+    <item>18.00</item>
+    <item>19.00</item>
+    <item>20.00</item>
+    <item>21.00</item>
+    <item>22.00</item>
+    <item>23.00</item>
+    <item>24.00</item>
+    <item>25.00</item>
+    <item>26.00</item>
+    <item>27.00</item>
+    <item>28.00</item>
+    <item>29.00</item>
+    <item>30.00</item>
+  </string-array>
+
+  <string-array name="items_drawer_navigation">
+    <item> @string/s_nav_drawer_tour </item>
+    <item> @string/s_nav_drawer_settings </item>
+    <item> @string/s_nav_drawer_sharing_title </item>
+    <item> @string/s_nav_drawer_about </item>
+    <item> @string/s_nav_drawer_policy </item>
+    <item> @string/s_nav_drawer_terms </item>
+  </string-array>
+
+</resources>

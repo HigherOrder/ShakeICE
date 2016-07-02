@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+  android:layout_width = "match_parent"
+  android:layout_height = "match_parent"
+  android:background = "@android:color/white"
+  android:orientation = "vertical">
+
+  <ScrollView
+    android:id = "@+id/scrollView"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:layout_margin = "12dp"
+    android:layout_marginLeft = "12dp"
+    android:layout_marginRight = "12dp">
+
+    <LinearLayout
+      android:layout_width = "match_parent"
+      android:layout_height = "720dp"
+      android:orientation = "vertical"
+      android:weightSum = "1">
+
+      <TextView
+        android:id = "@+id/tvBody"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_marginTop = "12dp"
+        android:layout_weight = "5.94"
+        android:text = "@string/s_dialog_view_help"
+        android:textColor = "@color/text_dialog_secondary"
+        android:textSize = "@dimen/text_dialog_tertiary" />
+      
+      <TextView
+        android:id = "@+id/tvClose"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom = "12dp"
+        android:layout_marginTop = "12dp"
+        android:gravity = "center"
+        android:text = "@string/s_close"
+        android:textColor = "@color/secondary"
+        android:textSize = "@dimen/text_dialog_buttons" />
+
+    </LinearLayout>
+
+  </ScrollView>
+
+</LinearLayout>

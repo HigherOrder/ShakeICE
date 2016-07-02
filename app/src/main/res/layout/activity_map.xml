@@ -1,0 +1,144 @@
+<LinearLayout
+  xmlns:android = "http://schemas.android.com/apk/res/android"
+  android:layout_width = "match_parent"
+  android:layout_height = "match_parent"
+  android:orientation = "vertical">
+
+  <include
+    android:id = "@+id/toolbar"
+    layout = "@layout/toolbar"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content" />
+    
+  <RelativeLayout
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:layout_below = "@+id/toolbar"
+    >
+    
+    <fragment
+      android:id = "@+id/map"
+      android:name = "com.google.android.gms.maps.SupportMapFragment"
+      xmlns:android = "http://schemas.android.com/apk/res/android"
+      xmlns:map = "http://schemas.android.com/apk/res-auto"
+      xmlns:tools = "http://schemas.android.com/tools"
+      android:layout_width = "match_parent"
+      android:layout_height = "match_parent"
+      tools:context = ".ui.MapActivity" />
+    
+      <TextView
+        android:id = "@+id/tvNear"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_above = "@+id/tvAddress"
+        android:layout_alignLeft = "@+id/tvLong"
+        android:layout_gravity = "center_horizontal"
+        android:layout_marginBottom = "9dp"
+        android:gravity = "center"
+        android:text = "@string/s_location"
+        android:textAppearance = "?android:attr/textAppearanceMedium"
+        android:textColor = "@android:color/black"
+        android:textSize = "15sp"
+        />
+      <TextView
+        android:id = "@+id/tvAddress"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_above = "@+id/tvLat"
+        android:layout_alignLeft = "@+id/tvLong"
+        android:layout_gravity = "center_horizontal"
+        android:layout_marginBottom = "3dp"
+        android:gravity = "left"
+        android:text = "@string/s_location_default"
+        android:textAppearance = "?android:attr/textAppearanceMedium"
+        android:textColor = "@android:color/black"
+        android:textSize = "15sp"
+        android:textStyle = "bold" />
+      <TextView
+        android:id = "@+id/tvLat"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_above = "@+id/tvLong"
+        android:layout_alignLeft = "@+id/tvLong"
+        android:layout_gravity = "center_horizontal"
+        android:layout_marginBottom = "1dp"
+        android:text = "@string/s_latitude"
+        android:textAppearance = "?android:attr/textAppearanceMedium"
+        android:textColor = "@android:color/black"
+        android:textSize = "15sp" />
+      <TextView
+        android:id = "@+id/tvLatitude"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_alignBottom = "@+id/tvLat"
+        android:layout_gravity = "center_horizontal"
+        android:layout_marginLeft = "6dp"
+        android:layout_toRightOf = "@+id/tvLat"
+        android:gravity = "left"
+        android:text = "@string/s_latitude"
+        android:textAppearance = "?android:attr/textAppearanceMedium"
+        android:textColor = "@android:color/black"
+        android:textSize = "15sp"
+        android:textStyle = "bold" />
+      <TextView
+        android:id = "@+id/tvLong"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_alignLeft = "@+id/tvNoAddress"
+        android:layout_alignParentBottom = "true"
+        android:layout_gravity = "center_horizontal"
+        android:layout_marginBottom = "48dp"
+        android:text = "@string/s_longitude"
+        android:textAppearance = "?android:attr/textAppearanceMedium"
+        android:textColor = "@android:color/black"
+        android:textSize = "15sp"
+        />
+      <TextView
+        android:id = "@+id/tvLongitude"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_alignBottom = "@+id/tvLong"
+        android:layout_gravity = "center_horizontal"
+        android:layout_marginLeft = "6dp"
+        android:layout_toRightOf = "@+id/tvLong"
+        android:gravity = "left|center"
+        android:text = "@string/s_latitude"
+        android:textAppearance = "?android:attr/textAppearanceMedium"
+        android:textColor = "@android:color/black"
+        android:textSize = "15sp"
+        android:textStyle = "bold" />
+      <TextView
+        android:id = "@+id/tvNoLocation"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_alignBottom = "@+id/tvNoAddress"
+        android:layout_alignLeft = "@+id/tvNoAddress"
+        android:layout_alignRight = "@+id/tvNoAddress"
+        android:text = "@string/s_message_no_location"
+        android:textAppearance = "?android:attr/textAppearanceMedium"
+        android:textColor = "@android:color/black"
+        android:textSize = "15sp"
+        android:textStyle = "bold"
+        android:visibility = "invisible"
+        android:layout_marginTop = "24dp"
+        android:layout_centerInParent = "true"
+        android:gravity = "center" />
+      <TextView
+        android:id = "@+id/tvNoAddress"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginLeft = "18dp"
+        android:layout_marginRight = "18dp"
+        android:text = "@string/s_message_no_address"
+        android:textAppearance = "?android:attr/textAppearanceMedium"
+        android:textColor = "@android:color/black"
+        android:textSize = "15sp"
+        android:textStyle = "bold"
+        android:visibility = "invisible"
+        android:layout_marginTop = "24dp"
+        android:layout_centerInParent = "true"
+        android:gravity = "center" />
+      
+  </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<resources>
+
+  <!-- Activities -->
+  <color name = "primary"> #ffffdb00 </color>
+   <color name = "primary_dark"> #66ffdb39 </color>
+  <color name = "secondary"> #ff103ffb </color>
+   <color name = "accent"> #ffff8a80 </color> 
+
+  <!-- Text in toolbar -->
+  <color name = "text_toolbar_primary"> #ff333333 </color> 
+  <color name = "text_toolbar_secondary"> #ff666666 </color> 
+
+  <!-- Text in activities -->
+  <color name = "text_primary"> #ffffdb00 </color> 
+  <color name = "text_secondary"> #ffffffff </color> 
+  <color name = "text_tertiary"> #ffc0c0c0 </color> 
+  <color name = "text_title"> #ff666666 </color> 
+
+  <!-- Text in dialogs -->
+  <color name = "text_dialog_primary"> #ff103ffb </color>
+  <color name = "text_dialog_secondary"> @android:color/black </color>
+  <color name = "text_dialog_tertiary"> #ff666666 </color>
+  <color name = "text_dialog_button_positive"> #ff103ffb </color>
+  <color name = "text_dialog_button_negative"> #ff666666 </color>
+  <color name = "text_dialog_button_neutral"> #ff103ffb </color>
+
+</resources>

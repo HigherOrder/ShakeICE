@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+  android:orientation = "horizontal"
+  android:layout_width = "match_parent"
+  android:layout_height = "wrap_content"
+              android:background = "@android:color/white">
+
+  <RelativeLayout
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:layout_marginLeft = "18dp"
+    android:layout_marginRight = "18dp"
+    android:layout_marginTop = "18dp"
+    android:layout_marginBottom = "18dp">
+
+  <TextView
+    android:id = "@+id/tvBody"
+    android:layout_width = "wrap_content"
+    android:layout_height = "wrap_content"
+    android:layout_alignParentLeft = "false"
+    android:layout_alignParentStart = "false"
+    android:layout_alignParentTop = "false"
+    android:text = "@string/s_dialog_disable_sms_message"
+    android:textColor = "@color/text_dialog_secondary"
+    android:textSize = "@dimen/text_dialog_secondary"
+    android:layout_alignParentRight = "false"
+    android:layout_alignParentEnd = "false"
+    />
+
+  <TextView
+    android:id = "@+id/tvClose"
+    android:layout_width = "wrap_content"
+    android:layout_height = "wrap_content"
+    android:text = "@string/s_yes"
+    android:textSize = "@dimen/text_dialog_buttons"
+    android:layout_alignParentBottom = "false"
+    android:layout_alignParentRight = "false"
+    android:textColor = "@color/text_dialog_button_positive"
+    android:layout_alignRight = "@+id/tvBody"
+    android:layout_below = "@+id/tvBody"
+    android:layout_marginTop = "12dp"
+    android:paddingLeft = "9dp"
+    android:paddingRight = "9dp"
+    android:paddingTop = "12dp"
+    android:paddingBottom = "12dp" />
+
+  <TextView
+    android:id = "@+id/tvNo"
+    android:layout_width = "wrap_content"
+    android:layout_height = "wrap_content"
+    android:text = "@string/s_no"
+    android:textAppearance = "?android:attr/textAppearanceMedium"
+    android:textSize = "@dimen/text_dialog_buttons"
+    android:layout_toLeftOf = "@+id/tvClose"
+    android:layout_marginRight = "30dp"
+    android:textColor = "@color/text_dialog_button_negative"
+    android:layout_alignBottom = "@+id/tvClose"
+    android:paddingBottom = "12dp"
+    android:paddingTop = "12dp"
+    android:paddingLeft = "9dp"
+    android:paddingRight = "9dp" />
+
+</RelativeLayout>
+
+</LinearLayout>

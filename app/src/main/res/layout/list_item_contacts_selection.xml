@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+<RelativeLayout
+  android:id="@+id/relativeLayout"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content" android:padding="6dp" android:paddingTop="3dp" android:paddingBottom="3dp">
+
+  <LinearLayout
+    android:id="@+id/llText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/ivItemSelected"
+    android:orientation="vertical" android:layout_centerVertical="true"
+    android:layout_marginTop = "3dp"
+    android:layout_marginBottom = "3dp">
+    <TextView
+      android:id="@+id/tvName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      android:text="@string/s_name_contact" android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/text_secondary"
+      android:textSize = "@dimen/text_secondary" />
+    <TextView
+      android:id="@+id/tvNumber"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="top"
+      android:text="@string/s_number_contact" android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/text_tertiary"
+      android:textSize = "@dimen/text_tertiary" />
+  </LinearLayout>
+  <ImageView
+    android:id="@+id/ivItemSelected"
+    android:layout_width="30dp"
+    android:layout_height="30dp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:layout_gravity="center_vertical|right" android:layout_marginLeft="12dp" android:contentDescription="@string/s_content_description"
+    android:visibility = "visible"
+    android:background = "@drawable/checkmark" />
+</RelativeLayout>
+</LinearLayout>

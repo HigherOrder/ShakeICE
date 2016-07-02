@@ -1,0 +1,22 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <CheckBoxPreference
+          android:key="PREF_KEY_SMS_ENABLE"
+          android:defaultValue="true"
+          android:entries="@array/pref_value_entries_sms_enable"
+          android:entryValues="@array/pref_value_entry_values_sms_enable"
+          android:title="@string/s_pref_title_enable_sms"/>
+
+  <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+       dismiss it. -->
+  <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+  <!--<ListPreference-->
+          <!--android:key="pref_key_threshold_gforce_for_alert"-->
+          <!--android:defaultValue="@string/s_pref_default_value_threshold_gforce_for_alert"-->
+          <!--android:entries="@array/pref_value_entries_threshold_gforce"-->
+          <!--android:entryValues="@array/pref_value_entry_values_threshold_gforce"-->
+          <!--android:negativeButtonText="@null"-->
+          <!--android:positiveButtonText="@null"-->
+          <!--android:title="@string/s_pref_title_threshold_gforce_for_alert"/>-->
+
+</PreferenceScreen>
