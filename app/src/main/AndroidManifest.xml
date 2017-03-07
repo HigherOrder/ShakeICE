@@ -1,111 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.progfun.app.shakeice" >
 
-    <uses-feature android:name="android.hardware.telephony" />
+<manifest
+  package = "com.progfun.app.shakeice"
+  xmlns:android = "http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <!-- <uses-permission android:name = "android.permission.READ_PHONE_STATE" /> -->
-    <uses-permission android:name="android.permission.SEND_SMS" />
-    <!-- <uses-permission android:name = "android.permission.RECEIVE_SMS" /> -->
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+  <uses-feature android:name = "android.hardware.telephony" />
+  <uses-permission android:name = "android.permission.READ_CONTACTS" />
+  <!-- <uses-permission android:name = "android.permission.READ_PHONE_STATE" /> -->
+  <uses-permission android:name = "android.permission.SEND_SMS" />
+  <!-- <uses-permission android:name = "android.permission.RECEIVE_SMS" /> -->
+  <uses-permission android:name = "android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission android:name = "android.permission.VIBRATE" />
+  <uses-permission android:name = "android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name = "android.permission.CALL_PHONE" />
+  <uses-permission android:name = "android.permission.INTERNET" />
 
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/s_label_app_name" >
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+  <application
+    
+    android:allowBackup = "true"
+    android:icon = "@drawable/ic_launcher"
+    android:label = "@string/s_label_app_name">
+    
+    <meta-data
+      android:name = "com.google.android.gms.version"
+      android:value = "@integer/google_play_services_version" />
+    <meta-data
+      android:name = "com.google.android.geo.API_KEY"
+      android:value = "@string/google_maps_key_release" />
+    
+    <activity
+      android:name = ".ui.SplashScreenActivity"
+      android:label = "@string/s_label_app_name"
+      android:screenOrientation = "nosensor"
+      android:theme = "@style/app.Fullscreen">
+      <intent-filter>
+        <action android:name = "android.intent.action.MAIN" />
+        <category android:name = "android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity
+      android:name = ".ui.MapActivity"
+      android:screenOrientation = "nosensor"
+      android:theme = "@style/app">
+    </activity>
+    <activity
+      android:name = ".ui.MainActivity"
+      android:label = "@string/s_label_app_name"
+      android:screenOrientation = "nosensor"
+      android:theme = "@style/app">
+    </activity>
+    <activity
+      android:name = ".ui.ContactsSelectionActivity"
+      android:label = "@string/s_label_activity_contacts_selection"
+      android:parentActivityName = ".ui.MainActivity"
+      android:screenOrientation = "nosensor"
+      android:theme = "@style/app">
+    </activity>
+    <activity
+      android:name = ".ui.ContactsManagementActivity"
+      android:label = "@string/s_label_activity_contacts_management"
+      android:parentActivityName = ".ui.MainActivity"
+      android:screenOrientation = "nosensor"
+      android:theme = "@style/app">
+    </activity>
+    <activity
+      android:name = ".ui.ViewAboutActivity"
+      android:label = "@string/s_nav_drawer_about"
+      android:parentActivityName = ".ui.MainActivity"
+      android:screenOrientation = "nosensor"
+      android:theme = "@style/Theme.AppCompat.Light.DialogWhenLarge">
+    </activity>
+    <activity
+      android:name = ".ui.ViewTermsActivity"
+      android:label = "@string/s_nav_drawer_terms"
+      android:parentActivityName = ".ui.MainActivity"
+      android:screenOrientation = "nosensor"
+      android:theme = "@style/Theme.AppCompat.Light.DialogWhenLarge">
+    </activity>
+    <activity
+      android:name = ".ui.ViewPolicyActivity"
+      android:label = "@string/s_nav_drawer_policy"
+      android:parentActivityName = ".ui.MainActivity"
+      android:screenOrientation = "nosensor"
+      android:theme = "@style/Theme.AppCompat.Light.DialogWhenLarge">
+    </activity>
 
-        <activity
-            android:name=".ui.MapActivity"
-            android:screenOrientation="nosensor"
-            android:theme="@style/app" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+    <!-- Services -->
+    <service
+      android:name = ".controllers.IntentServiceGForceWatcher"
+      android:exported = "false"
+      android:label = "@string/s_label_intent_service">
+    </service>
+    <service
+      android:name = ".location.IntentServiceAddressFetcher"
+      android:exported = "false">
+    </service>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".ui.MainActivity"
-            android:label="@string/s_label_app_name"
-            android:screenOrientation="nosensor"
-            android:theme="@style/app" >
-        </activity>
-        <activity
-            android:name=".ui.ContactsSelectionActivity"
-            android:label="@string/s_label_activity_contacts_selection"
-            android:parentActivityName=".ui.MainActivity"
-            android:screenOrientation="nosensor"
-            android:theme="@style/app" >
-        </activity>
-        <activity
-            android:name=".ui.ContactsManagementActivity"
-            android:label="@string/s_label_activity_contacts_management"
-            android:parentActivityName=".ui.MainActivity"
-            android:screenOrientation="nosensor"
-            android:theme="@style/app" >
-        </activity>
-        <activity
-            android:name=".ui.ViewAboutActivity"
-            android:label="@string/s_nav_drawer_about"
-            android:parentActivityName=".ui.MainActivity"
-            android:screenOrientation="nosensor"
-            android:theme="@style/Theme.AppCompat.Light.DialogWhenLarge" >
-        </activity>
-        <activity
-            android:name=".ui.ViewTermsActivity"
-            android:label="@string/s_nav_drawer_terms"
-            android:parentActivityName=".ui.MainActivity"
-            android:screenOrientation="nosensor"
-            android:theme="@style/Theme.AppCompat.Light.DialogWhenLarge" >
-        </activity>
-        <activity
-            android:name=".ui.ViewPolicyActivity"
-            android:label="@string/s_nav_drawer_policy"
-            android:parentActivityName=".ui.MainActivity"
-            android:screenOrientation="nosensor"
-            android:theme="@style/Theme.AppCompat.Light.DialogWhenLarge" >
-        </activity>
-
-        <!-- Services -->
-        <service
-            android:name=".controllers.IntentServiceGForceWatcher"
-            android:exported="false"
-            android:label="@string/s_label_intent_service" >
-        </service>
-        <service
-            android:name=".location.IntentServiceAddressFetcher"
-            android:exported="false" />
-
-        <!-- Broadcast receivers -->
-        <receiver
-            android:name=".controllers.BootupServiceStarterReceiver"
-            android:enabled="true"
-            android:exported="true"
-            android:label="s_label_receiver_bootup_service_starter" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-        <receiver
-            android:name=".controllers.ReceiverSms"
-            android:enabled="true"
-            android:exported="true"
-            android:label="@string/s_label_receiver_sms_reader" >
-            <intent-filter>
-                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-            </intent-filter>
-        </receiver>
-    </application>
+    <!-- Broadcast receivers -->
+    <receiver
+      android:name = ".controllers.BootupServiceStarterReceiver"
+      android:enabled = "true"
+      android:exported = "true"
+      android:label = "s_label_receiver_bootup_service_starter">
+      <intent-filter>
+        <action android:name = "android.intent.action.BOOT_COMPLETED" />
+      </intent-filter>
+    </receiver>
+    <receiver
+      android:name = ".controllers.ReceiverSms"
+      android:enabled = "true"
+      android:exported = "true"
+      android:label = "@string/s_label_receiver_sms_reader">
+      <intent-filter>
+        <action android:name = "android.provider.Telephony.SMS_RECEIVED" />
+      </intent-filter>
+    </receiver>
+    
+  </application>
 
 </manifest>

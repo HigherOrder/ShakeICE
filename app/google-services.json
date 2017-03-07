@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "489531336671",
+    "firebase_url": "https://shake-ice.firebaseio.com",
+    "project_id": "shake-ice",
+    "storage_bucket": "shake-ice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489531336671:android:436674c71a738fbd",
+        "android_client_info": {
+          "package_name": "com.progfun.app.shakeice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489531336671-1rut8mvbm2d5m9sn91uav1o1o7uut60u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqO5cryJEkr8Lu7qlCOIfu-UwQljztwQY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

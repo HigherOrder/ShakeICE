@@ -48,6 +48,12 @@
     <!-- <item name="android:background">@color/color_primary</item> -->
   </style>
 
+  <style 
+    name="app.Fullscreen" 
+    parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
   <style name = "app.Dialog"
          parent = "Theme.AppCompat.Dialog">
   </style>
@@ -63,6 +69,5 @@
   <style name = "ActivityMain"
          parent = "app">
   </style>
-
 
 </resources>

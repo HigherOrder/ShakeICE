@@ -468,7 +468,7 @@ class IntentServiceGForceWatcher
 
       thresholdGForce = common.round(common.fetchSpThresholdGForce(), 2);
 
-      Log.i(TAG, TAG2 + "gForce = " + gForce + ", thresholdGForce = " + thresholdGForce);
+//      Log.i(TAG, TAG2 + "gForce = " + gForce + ", thresholdGForce = " + thresholdGForce);
 
       if (gForce > thresholdGForce) { // To avoid false-positives calculate the average of the values of the gforce measured over a specific period, like 4 sec.
         Log.w(TAG, "onSensorChanged: gForce has exceeded threshold: " + gForce);

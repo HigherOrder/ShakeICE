@@ -143,7 +143,7 @@ class MapActivity
         location = address;
       }
       else { // The lat-long is available only.
-        location = latLong;
+        location = getString(R.string.error_address_unavailable);
       }
 
 //      Log.i(TAG, "onReceiveResult: resultCode = " + resultCode + ", address = " + address + ", latLong = " + latLong + ", location = " + location);

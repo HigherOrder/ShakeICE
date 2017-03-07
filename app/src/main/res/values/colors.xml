@@ -3,7 +3,7 @@
   <!-- Activities -->
   <color name = "primary"> #ffffdb00 </color>
    <color name = "primary_dark"> #66ffdb39 </color>
-  <color name = "secondary"> #ff103ffb </color>
+  <color name = "secondary">#103ffb</color>
    <color name = "accent"> #ffff8a80 </color> 
 
   <!-- Text in toolbar -->
@@ -23,5 +23,8 @@
   <color name = "text_dialog_button_positive"> #ff103ffb </color>
   <color name = "text_dialog_button_negative"> #ff666666 </color>
   <color name = "text_dialog_button_neutral"> #ff103ffb </color>
+
+  <!-- Background -->
+  <color name = "background"> #ff1a8dfc </color> 
 
 </resources>

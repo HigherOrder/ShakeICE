@@ -8,8 +8,10 @@ android {
     minSdkVersion 16 // Android version 4.1.2 (Jelly Bean), since July 9, 2012
 //    minSdkVersion 10 // Android version 2.3.3 (Gingerbread), since February 9, 2011
     applicationId "com.progfun.app.shakeice"
-    versionCode 4
-    versionName "1.4"
+    versionCode 6 // Ads
+//    versionCode 4 // Calls to primary contact, location on map
+//    versionCode 3 // Original
+    versionName "1.6"
   }
   buildTypes {
     release {
@@ -24,5 +26,8 @@ dependencies {
   compile 'com.android.support:support-v4:23.4.0'
   compile 'com.android.support:appcompat-v7:23.4.0'
   compile 'com.android.support:design:23.4.0'
-  compile 'com.google.android.gms:play-services-location:7.5.0'
+  compile 'com.google.android.gms:play-services-location:9.2.0'
+  compile 'com.google.android.gms:play-services-places:9.2.0'
 }
+
+apply plugin: 'com.google.gms.google-services'  // Added to support Firebase.

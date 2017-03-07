@@ -15,6 +15,7 @@
     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
     string in this file.
     -->
-    <!--<string name = "google_maps_key" templateMergeStrategy = "preserve" translatable = "false">GoogleMapsAPIAndroidKeyDebug</string>  Debug -->
-    <string name = "google_maps_key" templateMergeStrategy = "preserve" translatable = "false">GoogleMapsAPIAndroidKeyRelease</string> <!-- Release -->
+  <string name = "google_maps_key_debug" templateMergeStrategy = "preserve" translatable = "false"> AIzaSyDDilH8WDedjeSnEe_aFkKNoI_1kPGb4uk</string> <!-- Debug -->
+  <string name = "google_maps_key_release" templateMergeStrategy = "preserve" translatable = "false"> AIzaSyCRshUF4whf3vyXW9n5Z6e_4nxYQtvfVOQ</string> <!-- Release -->
+    
 </resources>

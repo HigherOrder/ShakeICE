@@ -1,0 +1,21 @@
+<FrameLayout
+  
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/background"
+  tools:context="com.progfun.app.shakeice.ui.SplashScreenActivity">
+
+  <!-- This FrameLayout insets its children based on system windows using android:fitsSystemWindows. -->
+
+  <RelativeLayout
+  android:layout_width = "match_parent"
+  android:layout_height = "match_parent"
+    android:id = "@+id/rlLogo">
+          <ImageView
+            android:layout_width = "300dp"
+            android:layout_height = "300dp"
+            android:id = "@+id/ivLogo"
+            android:background = "@drawable/splash"
+            android:layout_centerInParent = "true" /></RelativeLayout></FrameLayout>

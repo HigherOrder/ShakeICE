@@ -62,6 +62,8 @@ public final class Constants {
   public static final int INTERVAL_CALLS_TO_ADDRESS_FETCHER = 30000;
   public static final int DELAY_CALL_TO_ADDRESS_FETCHER_FIRST = 1000;
 
+  public static int TIMEOUT_SPLASH_SCREEN = 2000;
+
   public static final int DURATION_RECORD_VALUES_GFORCE_MILLISECONDS = 3600;
 
   public static final String FRAGMENT_DIALOG_ACTIVITY_SELECTED_NAME = "FRAGMENT_DIALOG_ACTIVITY_SELECTED_NAME";
